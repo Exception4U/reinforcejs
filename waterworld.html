@@ -237,20 +237,8 @@
                         y: smooth_reward_history[1],
                         type: 'scatter',name:'loss'
                     };
-        var layout = {
-          title: 'Sales Growth',
-          xaxis: {
-            title: 'Year',
-            showgrid: false,
-            zeroline: false
-          },
-          yaxis: {
-            title: 'Percent',
-            showline: false
-          };
         var data = [trace1, trace2];
-        console.log("Tushar");
-        Plotly.newPlot(TESTER, data);
+        Plotly.newPlot(TESTER, data, { xaxis: {range:[0,100]},yaxis: {range:[-0.05,0.05]}} );
 
     }
 
